@@ -1,5 +1,5 @@
 # FastCinema
 指定された場所付近にある映画館を検索するWebアプリケーションです。
-
-![fastcinema](https://user-images.githubusercontent.com/48997441/60791344-6a30d280-a19e-11e9-9356-badba2a58c8f.gif)
-
+  
+![FastCinemaGif](https://user-images.githubusercontent.com/48997441/60792090-f68fc500-a19f-11e9-9bd7-c5247327ef08.gif)
+  
