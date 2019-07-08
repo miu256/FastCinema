@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container">
+    <form method='POST' action='/findCinema'>
+        <div class="form-group">
+            <label for="nowLocation">あなたがどこにいるか教えてください。(ex.最寄り駅など)</label>
+            <input type="text" class="form-control" id="nowLocation" name="nowLocation" placeholder="Where?">
+        </div>
+        <button type="submit" class="btn btn-primary">Tell me</button>
+    </form>
+</div>
+
+{% endblock %}
+
