@@ -20,7 +20,7 @@ class myTest(unittest.TestCase):
                 nowLocation=''
             )
         )
-        assert response.status_code == 200
+        assert response.status_code == 302
 
     def testSearch(self):
         response = self.app.post(

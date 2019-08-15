@@ -2,36 +2,34 @@
 
 {% block body %}
 
-<div class="container">
-    {% if theCinema %}
+{% if theCinema %}
 
-    <p>以下の映画館はいかがでしょうか。</p>
-    <table class="table">
-        <thead class="thead-light">
-        <tr>
-            <th scope="col">名前</th>
-            <th scope="col">場所</th>
-            <th scope="col">評価</th>
-        </tr>
-        </thead>
+<p>以下の映画館はいかがでしょうか。</p>
+<table class="table">
+    <thead class="thead-light">
+    <tr>
+        <th scope="col">名前</th>
+        <th scope="col">場所</th>
+        <th scope="col">評価</th>
+    </tr>
+    </thead>
 
-        {% for cinema in theCinema %}
-        <tbody>
-        <tr>
-            <td> {{ cinema.name }}</td>
-            <td> {{ cinema.vicinity }}</td>
-            <td> {{ cinema.rating }}</td>
-        </tr>
-        </tbody>
-        {% endfor %}
-    </table>
+    {% for cinema in theCinema %}
+    <tbody>
+    <tr>
+        <td> {{ cinema.name }}</td>
+        <td> {{ cinema.vicinity }}</td>
+        <td> {{ cinema.rating }}</td>
+    </tr>
+    </tbody>
+    {% endfor %}
+</table>
 
-    {% else %}
-    <p>検索に失敗しました。やり直してください。</p>
-    {% endif %}
+{% else %}
+<p>検索に失敗しました。やり直してください。</p>
+{% endif %}
 
-    <a class="btn btn-primary" href="/entry" role="button">戻る</a>
+<a class="btn btn-primary" href="/entry" role="button">戻る</a>
 
-</div>
 
 {% endblock %}
