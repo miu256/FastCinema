@@ -2,14 +2,22 @@
 
 {% block body %}
 
-<div class="container">
-    <form method='POST' action='/findCinema'>
-        <div class="form-group">
-            <label for="nowLocation">あなたがどこにいるか教えてください。(ex.最寄り駅など)</label>
-            <input type="text" class="form-control" id="nowLocation" name="nowLocation" placeholder="Where?">
-        </div>
-        <button type="submit" class="btn btn-primary">Tell me</button>
-    </form>
+<form method='POST' action='/findCinema'>
+    <div class="form-group">
+        <label for="nowLocation">あなたがどこにいるか教えてください。(ex.最寄り駅)</label>
+        <input type="text" class="form-control" id="nowLocation" name="nowLocation" placeholder="Where?">
+    </div>
+    <button type="submit" class="btn btn-primary">Tell me</button>
+</form>
+
+<br>
+
+<div class="text-center">
+        {% if imageURL %}
+            {% for url in imageURL %}
+                <img src = {{ url }} width=250px class="rounded">
+            {% endfor %}
+        {% endif %}
 </div>
 
 {% endblock %}
