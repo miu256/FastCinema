@@ -12,8 +12,11 @@ def page_not_found(e):
 @app.route('/findCinema', methods=['POST'])
 def do_findCinema() -> str:
     nowLocation = request.form['nowLocation']
-    theCinema = findCinema(nowLocation)
-    return render_template('results.html', theCinema=theCinema)
+    if not nowLocation:
+        return render_template('entry.html')
+    else:
+        theCinema = findCinema(nowLocation)
+        return render_template('results.html', theCinema=theCinema)
 
 
 @app.route('/')
@@ -22,4 +25,5 @@ def entryPage() -> str:
     return render_template('entry.html')
 
 
-app.run()
+if __name__ == '__main__':
+    app.run(debug=True)
