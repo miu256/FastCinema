@@ -10,4 +10,7 @@ GooglePlacesAPIとTMDbAPIを用いて実装を行いました。
 - [tmdbsimple](https://github.com/celiao/tmdbsimple)  
   
 ### DEMO  
-https://fastcinema.appspot.com
+https://fastcinema.appspot.com  
+
+### Author
+Rita Gunji
