@@ -9,8 +9,5 @@ GooglePlacesAPIとTMDbAPIを用いて実装を行いました。
 - [googlemaps](https://github.com/googlemaps/google-maps-services-python)
 - [tmdbsimple](https://github.com/celiao/tmdbsimple)  
   
-### DEMO  
-https://fastcinema.appspot.com  
-
 ### Author
 Rita Gunji
