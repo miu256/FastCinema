@@ -8,6 +8,4 @@ GooglePlacesAPIとTMDbAPIを用いて実装を行いました。
 - Flask
 - [googlemaps](https://github.com/googlemaps/google-maps-services-python)
 - [tmdbsimple](https://github.com/celiao/tmdbsimple)  
-  
-### Author
-Rita Gunji
+
